@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; img-src 'self' data:;"
+    />
+
     <link rel="icon" type="image/x-icon" href="./src/img/favicon.webp" />
     <link rel="stylesheet" href="./src/css/style.css" />
     <title>Cozy House Shelter</title>
@@ -28,7 +33,7 @@
                 >
               </li>
               <li>
-                <a class="navigation__link" href="../pets/index.html">
+                <a class="navigation__link" href="./pets/index.html">
                   Our pets</a
                 >
               </li>
@@ -113,11 +118,7 @@
             <span class="slider__arrow-right"></span>
           </div>
 
-          <form
-            style="display: inline"
-            action="../pets/index.html"
-            method="get"
-          >
+          <form style="display: inline" action="./pets/index.html" method="get">
             <button class="button button_colored friends__button">
               Get to know the rest
             </button>
@@ -259,7 +260,7 @@
       </div>
     </footer>
 
-    <script type="module" src="../main/script.js"></script>
-    <script type="module" src="../main/src/pets.js"></script>
+    <script type="module" src="./script.js"></script>
+    <script type="module" src="./src/pets.js"></script>
   </body>
 </html>

@@ -1,4 +1,4 @@
-import { petsInfo } from '../main/src/pets.js';
+import { petsInfo } from './src/pets.js';
 
 let burgerMenu = document.querySelector('.burger-menu');
 let navigation = document.querySelector('.header__navigation');
