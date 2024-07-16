@@ -1,0 +1,43 @@
+.button {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.7rem;
+  line-height: 130%;
+  border-radius: 100px;
+
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 130%;
+  /* identical to box height, or 22px */
+
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+.button:hover {
+  transition: 0.5s ease-in-out;
+  background-color: $color-button-hover;
+}
+
+.button_bordered {
+  border-color: $color-button;
+}
+
+.button_bordered {
+  border: 1px solid $color-button;
+}
+.button_bordered:hover {
+  background: #fddcc4;
+}
+
+.button_colored {
+  background-color: $color-button;
+  border: none;
+}
+
+.button_colored:hover {
+  background-color: #fddcc4;
+}

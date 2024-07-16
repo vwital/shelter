@@ -1,0 +1,188 @@
+.friends-bg {
+  background-color: $color-background_gray;
+}
+
+.friends {
+  background-color: $color-background_gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 100px;
+  h2 {
+    max-width: 400px;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 54px;
+
+    @media (max-width: 1000px) {
+      padding-bottom: 59px;
+    }
+
+    @media (max-width: 500px) {
+      padding-bottom: 41px;
+    }
+  }
+  @media (max-width: 1000px) {
+    padding-bottom: 100px;
+    }
+
+
+  @media (max-width: 500px) {
+    padding-top: 44px;
+    padding-bottom: 173px;
+    form {
+      margin: -132px;
+    }
+  }
+}
+
+.friends__slider {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  @media (max-width: 1000px) {
+    gap: 41px;
+    justify-content: center;
+  }
+  @media (max-width: 500px) {
+    flex-direction: column;
+  }
+}
+
+.slider__container{
+  max-width: 990px;
+  overflow: hidden;
+  @media (max-width: 768px) {
+    max-width:580px 
+  }
+  @media (max-width: 320px) {
+    max-width:270px 
+  }
+}
+
+.slider__slides-list{
+  display: flex;
+  flex-wrap: nowrap;
+  transition: transform 0.5s ease;
+}
+
+
+.slider__card {
+ min-width: 270px;
+  border-radius: 9px;
+  background-color: $color-cards-background;
+  padding-bottom: 30px;
+  margin: 0 35px;
+  cursor: pointer;
+  img {
+    width: 100%;
+  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  span {
+    font-family: "Georgia";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    color: $color-sections-header;
+  }
+  @media (max-width: 1200px) {
+    margin: 0;
+  }
+
+  @media (max-width: 1000px) {
+    &:nth-child(4) {
+      display: none;
+    }
+  }
+  @media (max-width: 720px) {
+    &:nth-child(3) {
+      display: none;
+    }
+  }
+  button{
+    background-color: #ffffff;
+  }
+}
+
+.slider__card:hover {
+  transition: 0.5s ease-in-out;
+  scale: (1.05);
+}
+
+.slider-card__text {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.06em;
+  padding: 30px 0;
+}
+
+.slider-card__button {
+  width: 187px;
+  height: 52px;
+}
+
+.slider__arrow-left,
+.slider__arrow-right {
+  display: inline-block;
+  width: 52px;
+  height: 52px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+
+  background-image: url("../../src/img/arrows/button_arrow.svg");
+  @media (max-width: 1000px) {
+    position: absolute;
+    right: 30px;
+    @media (max-width: 500px) {
+      position: relative;
+      top: -21px;
+    }
+  }
+}
+.slider__arrow-left:hover {
+  background-image: url("../../src/img/arrows/button_arrow_active.svg");
+}
+.slider__arrow-right:hover {
+  background-image: url("../../src/img/arrows/button_arrow_active.svg");
+}
+
+.slider__arrow-right {
+  rotate: 180deg;
+  @media (max-width: 1000px) {
+    right: 30px;
+  }
+  @media (max-width: 500px) {
+    right: -66px;
+  }
+}
+.slider__arrow-left {
+  @media (max-width: 1000px) {
+    left: 30px;
+  }
+  @media (max-width: 500px) {
+    top: -114px;
+    left: -66px;
+    order: 2;
+  }
+}
+
+.friends__button {
+  width: 261px;
+  height: 52px;
+  margin-top: 60px;
+  a {
+    list-style-type: none;
+    text-decoration: none;
+    color: $color-button-text;
+  }
+}
+

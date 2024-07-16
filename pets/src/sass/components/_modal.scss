@@ -1,0 +1,90 @@
+.modal{
+    
+    display: flex;
+    width: 900px;
+    height: 500px;
+    background-color:#FAFAFA;
+    position: fixed;
+    top:15%;
+    right: 17%;
+    z-index: 4;
+font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 110%;
+letter-spacing: 0.06em;
+color: #000000;
+border-radius:20px;
+
+    @media (max-width: 768px){
+      max-width: 630px;
+      max-height: 350px;
+    }
+    @media (max-width: 400px){
+      max-width: 240px;
+      max-height: 341px;
+    }
+    h5{
+        font-family: 'Georgia';
+font-style: normal;
+font-size: 35px;
+line-height: 130%;
+letter-spacing: 0.06em;
+margin: 0;
+padding-top: 50px;
+color: #000000;
+    }
+    p{
+        font-family: 'Georgia';
+font-style: normal;
+        padding-top:40px ;
+        font-weight: 400;
+font-size: 15px;
+line-height: 110%;
+letter-spacing: 0.06em;
+color: #000000;
+    }
+    ul{
+        padding-top: 40px;
+        li{
+            padding-top: 11px;
+               font-weight: 700;
+            span{
+                font-weight: 400;
+            }
+        }
+    }
+  }
+  
+  .modal_hidden{
+    display: none;
+  }
+
+
+  #modal__img{
+    width: 500px;
+  }
+  .modal__description{
+  padding-left: 30px;
+  }
+  
+  .modal__subheader{
+    font-family: 'Georgia';
+font-style: normal;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    padding-top: 10px;
+  }
+  
+.modal__cross{
+    background-image: url("../../img/ico/modal_close_button.svg");
+display: inline-block;
+width: 60px;
+height: 60px;
+z-index: 5;
+position: fixed;
+right: -10px;
+top: 100px;
+}

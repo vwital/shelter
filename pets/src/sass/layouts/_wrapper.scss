@@ -1,0 +1,18 @@
+.wrapper {
+  max-width: $content-width;
+  margin: auto;
+
+  @media (max-width: $content-width) {
+    max-width: (1200/1280 * 100%);
+  }
+
+  @media (max-width: $tablet-width) {
+    max-width: $tablet-content-width;
+  }
+  @media (max-width: $tablet-content-width) {
+    max-width: (708/768 * 100%);
+  }
+  @media (max-width: $mobile-width) {
+    max-width: $mobile-content-width;
+  }
+}

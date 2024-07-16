@@ -1,0 +1,35 @@
+.logo {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+  color: $color-sections-header;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  text-decoration: none;
+  list-style-type: none;
+  span {
+    padding-top: 10px;
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    align-items: center;
+    letter-spacing: 0.1em;
+    color: $color-sections-header;
+  }
+  @media (max-width: 320px) {
+    margin-left: 10px;
+  }
+}
+
+.logo:hover {
+  transition: 0.6s ease-in-out;
+  transform: scale(1.05);
+  color: $color-button-hover;
+}

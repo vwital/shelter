@@ -1,0 +1,41 @@
+.help__ico {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  @media (max-width: 500px) {
+    max-width: 50px;
+    max-height: 50px;
+    object-fit: contain;
+    background-size: 100%;
+  }
+}
+
+.pet-food {
+  background-image: url("../../src/img/ico/icon-pet-food.svg");
+  background-size: 100%;
+}
+
+.transportation {
+  background-image: url("../../src/img/ico/transportation.svg");
+}
+.toys {
+  background-image: url("../../src/img/ico/icon-toys.svg");
+}
+.bowls-and-cups {
+  background-image: url("../../src/img/ico/icon-bowls-and-cups.svg");
+}
+.shampoos {
+  background-image: url("../../src/img/ico/icon-shampoos.svg");
+}
+.vitamins {
+  background-image: url("../../src/img/ico/icon-vitamins.svg");
+}
+.medicines {
+  background-image: url("../../src/img/ico/icon-medicines.svg");
+}
+.collars-leashes {
+  background-image: url("../../src/img/ico/icon-collars-leashes.svg");
+}
+.sleeping-areas {
+  background-image: url("../../src/img/ico/icon-sleeping-area.svg");
+}

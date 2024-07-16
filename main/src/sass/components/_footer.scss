@@ -1,0 +1,140 @@
+.footer-bg {
+  background: $color-footer-background;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 38px;
+  h3 {
+    font-family: "Georgia";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: $color-text;
+    margin: 0;
+    padding-top: 17px;
+    @media (max-width: 500px) {
+      font-size: 25px;
+      line-height: 130%;
+      text-align: center;
+      letter-spacing: 0.06em;
+      max-width: 250px;
+    }
+  }
+  p {
+    font-family: "Georgia";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: $color-contacts-text;
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+    @media (max-width: 500px) {
+      font-size: 20px;
+      line-height: 115%;
+      letter-spacing: 0.06em;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    list-style-type: none;
+    color: $color-contacts-text;
+    display: flex;
+    align-items: center;
+  }
+  a:hover {
+    color: $color-links-hover;
+    transition: 0.5s ease-in-out;
+    transform: scale(1.05);
+  }
+  @media (max-width: 1000px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 14px;
+    gap: 34px;
+  }
+  @media (max-width: 500px) {
+
+    gap: 0;
+  }
+}
+
+.footer__content {
+  max-width: 302px;
+}
+
+.footer__ico {
+  margin-right: 20px;
+}
+
+.icon-marker {
+  display: inline-block;
+  background-image: url("../../src/img/ico/icon-marker.svg");
+  width: 22px;
+  height: 32px;
+  visibility: visible;
+  overflow: visible;
+}
+
+.ico-phone {
+  display: inline-block;
+  background-image: url("../../src/img/ico/icon-phone.svg");
+  width: 40px;
+  height: 32px;
+}
+
+.ico-mail {
+  display: inline-block;
+  background-image: url("../../src/img/ico/icon-email.svg");
+  width: 40px;
+  height: 32px;
+}
+
+.footer__adress {
+  margin-left: -25px;
+  @media (max-width: 1000px) {
+    margin: 0;
+  }
+  h3 {
+    @media (max-width: 500px) {
+      max-width: 294px;
+    }
+  }
+  @media (max-width: 500px) {
+    padding-top: 20px;
+  }
+  p {
+    @media (max-width: 500px) {
+      padding-top: 40px;
+    }
+  }
+}
+
+.footer__image {
+  max-width: 300px;
+  max-height: 310px;
+  @media (max-width: 1000px) {
+    padding-top: 29px;
+  }
+  @media (max-width: 500px) {
+    max-width: 260px;
+    padding-top: 41px;
+  }
+}
+
+.footer__contacts {
+  p {
+    padding-top: 40px;
+  }
+}
+
+.icon-marker-first {
+  width: 42px;
+}

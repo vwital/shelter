@@ -1,0 +1,78 @@
+.help {
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h2 {
+    max-width: 310px;
+    text-align: center;
+    padding-bottom: 60px;
+
+    @media (max-width: 1000px) {
+      padding-bottom: 58px;
+    }
+    @media (max-width: 500px) {
+      max-width: 225px;
+      padding-bottom: 41px;
+    }
+  }
+  padding-bottom: 100px;
+  @media (max-width: 1000px) {
+    justify-content: center;
+  }
+  @media (max-width: 500px) {
+    padding-top: 43px;
+    padding-bottom: 40px;
+  }
+}
+
+.help__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 55px 120px;
+  max-width: 1060px;
+  @media (max-width: 1000px) {
+    gap: 55px 60px;
+  }
+  @media (max-width: 500px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
+.help__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (max-width: 1000px) {
+    width: 170px;
+  }
+  @media (max-width: 500px) {
+    width: auto;
+    max-width: 130px;
+  }
+}
+
+.help-card__text {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: $color-sections-header;
+  margin: 0;
+  padding-top: 30px;
+
+  @media (max-width: 500px) {
+    padding-top: 21px;
+    font-size: 15px;
+    line-height: 110%;
+    text-align: center;
+    letter-spacing: 0.06em;
+  }
+}

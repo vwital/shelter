@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="icon" type="image/x-icon" href="./src/img/favicon.png">
+    <title>Cozy House Shelter</title>
+  </head>
+  <body>
+    <section class="start-screen">
+      <div class="wrapper">
+        <header class="header">
+          <a href="../main/index.html" class="logo"
+            >Cozy House
+            <h5>Shelter for pets in Boston</h5></a
+          >
+          <div class="burger-menu">
+            <div class="burger-menu__icon">
+              <div class="burger-icon__line"></div>
+              <div class="burger-icon__line"></div>
+              <div class="burger-icon__line"></div>
+            </div>
+          </div>
+          <nav class="header__navigation">
+            <ul class="navigation">
+              <li>
+                <a class="navigation__link" href="../main/index.html"
+                  >About the shelter</a
+                >
+              </li>
+              <li>
+                <a class="navigation__link navigation__link_active" href="#">
+                  Our pets</a
+                >
+              </li>
+              <li>
+                <a class="navigation__link" href="../main/index.html#help"
+                  >Help the shelter</a
+                >
+              </li>
+              <li>
+                <a class="navigation__link" href="#contacts">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="overlay"></div>
+        </header>
+      </div>
+    </section>
+    <section class="friends-bg">
+      <div class="wrapper">
+        <div class="friends">
+          <h1>
+            Our friends who <br>
+            are looking for a house
+          </h1>
+          <div class="friends__slider">
+            <div class="slider__container">
+              <div class="slides-list"></div>
+            <!-- <div class="cards-set">
+            <div class="slider__card">
+              <img
+                class="slider-card__img"
+                src="./src/img/pets/pets-katrine.png"
+                alt="friends -katrine"
+              >
+              <span class="slider-card__text">Katrine</span>
+              <button class="button slider-card__button button_bordered">
+                Learn more
+              </button>
+            </div>
+            <div class="slider__card">
+              <img
+                class="slider-card__img"
+                src="./src/img/pets/pets-jennifer.png"
+                alt="friends-jennifer"
+              >
+              <span class="slider-card__text">Jennifer</span>
+              <button class="button slider-card__button button_bordered">
+                Learn more
+              </button>
+            </div>
+
+            <div class="slider__card">
+              <img
+                class="slider-card__img"
+                src="./src/img/pets/pets-woody.png"
+                alt="pets-wood"
+              >
+              <span class="slider-card__text">Woody</span>
+              <button class="button slider-card__button button_bordered">
+                Learn more
+              </button>
+            </div>
+            <div class="slider__card">
+              <img
+                class="slider-card__img"
+                src="./src/img/pets/pets-sophia.png"
+                alt="pets-wood"
+              >
+              <span class="slider-card__text">Sophia</span>
+              <button class="button slider-card__button button_bordered">
+                Learn more
+              </button>
+            </div>
+            <div class="slider__card">
+              <img
+                class="slider-card__img"
+                src="./src/img/pets/pets-timmy.png"
+                alt="pets-wood"
+              >
+              <span class="slider-card__text">Timmy</span>
+              <button class="button slider-card__button button_bordered">
+                Learn more
+              </button>
+            </div>
+            <div class="slider__card">
+              <img
+                class="slider-card__img"
+                src="./src/img/pets/pets-charly.png"
+                alt="pets-wood"
+              >
+              <span class="slider-card__text">Charly</span>
+              <button class="button slider-card__button button_bordered">
+                Learn more
+              </button>
+            </div>
+            <div class="slider__card">
+              <img
+                class="slider-card__img"
+                src="./src/img/pets/pets-scarlet.png"
+                alt="pets-wood"
+              >
+              <span class="slider-card__text">Scarlett</span>
+              <button class="button slider-card__button button_bordered">
+                Learn more
+              </button>
+            </div>
+            <div class="slider__card">
+              <img
+                class="slider-card__img"
+                src="./src/img/pets/pets-freddie.png"
+                alt="pets-wood"
+              >
+              <span class="slider-card__text">Freddie</span>
+              <button class="button slider-card__button button_bordered">
+                Learn more
+              </button></div> -->
+            <!-- </div> -->
+            </div>
+          </div>
+          <div class="slider-buttons">
+            <span class="slider__button slider__button__inactive-1arrow button_inactive"><<</span>
+            <span
+              class="slider__button slider__button__inactive-2arrows button_inactive"
+            ><</span>
+            <span class="slider__button slider__button__number">1</span>
+            <span class="slider__button slider__button__active-1arrow button_active">></span>
+            <span class="slider__button slider__button__active-2arrows button_active">>></span>
+          </div>
+        </div>
+      </div>
+      <div class="modal modal_hidden">
+        <span class="modal__cross"></span>
+      <img id="modal__pet-img" src="./src/img/pets/pets-charly.png">
+      <div class="modal__description">
+      <h5 id="modal__pet-name">Jennifer</h5>
+      <p id="modal__pet-breed">Dog - Labrador</p>
+      <p id="modal__pet-info">Jennifer is a sweet 2 months old Labrador that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.</p>
+     <ul>
+      <li  >Age:<span id="modal__pet-age"> 2 months</span>  </li>
+      <li>Inoculations:<span id="modal__pet-inoculations" > none</span> </li>
+      <li>Diseases:<span id="modal__pet-diseases" > none</span> </li>
+      <li>Parasites:<span id="modal__pet-parasites"> none</span></li>
+     </ul>
+    </div>
+    </section>
+
+    <footer class="footer-bg">
+      <div class="wrapper">
+        <div id="contacts" class="footer">
+          <div class="footer__contacts footer__content">
+            <h3>For questions and suggestions</h3>
+            <p>
+              <a href="mailto:email@shelter.com">
+                <span class="footer__ico ico-mail"> </span>email@shelter.com</a
+              >
+            </p>
+            <p>
+              <a href="tel:+136745677554">
+                <span class="footer__ico ico-phone"> </span> +13 674 567 75
+                54</a
+              >
+            </p>
+          </div>
+          <div class="footer__adress footer__content">
+            <h3>We are waiting for your visit</h3>
+            <p>
+              <a href="https://goo.gl/maps/sshK4L5WGMLXpbRM9 " target="_blank"
+                ><span class="footer__ico icon-marker icon-marker-first"></span
+                >1 Central Street, Boston (entrance from the store)
+              </a>
+            </p>
+            <p>
+              <a href="https://goo.gl/maps/9HVuyvzSRt3dpJzV8" target="_blank">
+                <span class="footer__ico icon-marker"></span>18 South Park,
+                London
+              </a>
+            </p>
+          </div>
+          <img
+            class="footer__image"
+            src="./src/img/footer-puppy.png"
+            alt="footer-puppy"
+          >
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="../pets/script.js"></script>
+    <script type="module" src="../pets/src/pets.js"></script>
+  </body>
+</html>

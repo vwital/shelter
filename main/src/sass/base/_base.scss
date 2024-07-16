@@ -1,0 +1,100 @@
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: auto;
+  font-size: 1.6rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+h1 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 130%;
+  @media (max-width: 500px) {
+    font-size: 25px;
+    line-height: 130%;
+  }
+}
+
+h2 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: $color-sections-header;
+  margin: 0;
+  @media (max-width: 500px) {
+    font-size: 25px;
+    line-height: 130%;
+  }
+}
+
+h3 {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+
+  @media (max-width: 500px) {
+    font-size: 15px;
+    line-height: 110%;
+  }
+}
+
+h4 {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 110%;
+}
+
+h5 {
+  font-family: "Arial";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+p {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  color: $color-sections-text;
+  margin: 0;
+}
+
+.overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color:rgba(0,0,0,0.5);
+  width: 100%;
+  height: 100%;
+  display:  none;
+}
+
+.overlay_active{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color:rgba(0,0,0,0.5);
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.scroll-block{
+  overflow: hidden;
+}

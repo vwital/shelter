@@ -1,0 +1,126 @@
+.donation-bg {
+  background-color: $color-background_gray;
+}
+
+.donation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+  }
+  @media (max-width: 500px) {
+    padding-top: 42px;
+    padding-bottom: 0;
+  }
+}
+
+.donation__img {
+  max-width: 505px;
+  max-height: 261px;
+  padding-top: 11px;
+  @media (max-width: 1000px) {
+    display: flex;
+    order: 2;
+    padding-top: 40px;
+  }
+  @media (max-width: 768px) {
+    max-width: 100%;
+  }
+  @media (max-width: 500px) {
+    width: 260px;
+    padding-top: 22px;
+    padding-bottom: 41px;
+  }
+}
+
+.donation__content {
+  max-width: 380px;
+  padding-left: 30px;
+  h2 {
+    max-width: 300px;
+    @media (max-width: 500px) {
+      text-align: center;
+      max-width: 222px;
+    }
+  }
+  h4 {
+    font-family: "Georgia";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 110%;
+    color: $color-sections-header;
+    letter-spacing: 0.06em;
+    @media (max-width: 500px) {
+      line-height: 160%;
+      letter-spacing: normal;
+    }
+  }
+  h5 {
+    font-family: "Arial";
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: $color-smooth-text;
+  }
+  @media (max-width: 1000px) {
+    display: flex;
+    flex-direction: column;
+    order: 1;
+    padding-left: 0;
+  }
+  @media (max-width: 500px) {
+    align-items: center;
+    text-align: justify;
+    max-width: 280px;
+  }
+}
+
+.donation__credit-card {
+  display: flex;
+  align-items: center;
+  background: $color-logo;
+  border-radius: 9px;
+  max-width: 349px;
+  height: 43px;
+  cursor: pointer;
+}
+.donation__credit-card:hover {
+  transition: 0.5s ease-in-out;
+
+  background-color: #fddcc4;
+  cursor: default;
+  @media (max-width: 500px) {
+    width: 282px;
+  }
+}
+
+.credit-card-img {
+  display: inline-block;
+  background: url("../../src/img/ico/credit-card.svg");
+  width: 30px;
+  height: 23px;
+  margin: 0 15px;
+}
+
+.credit-card__number {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: $color-sections-header;
+  @media (max-width: 500px) {
+    font-size: 15px;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    padding-right: 14px;
+  }
+}
